@@ -7,7 +7,9 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             var app = new Application();
-            app.Start(args);
+            app.Start();
+
+            Console.ReadKey();
         }
     }
 }

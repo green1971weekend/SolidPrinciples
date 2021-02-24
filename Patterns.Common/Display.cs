@@ -7,7 +7,7 @@ namespace Patterns.Common
         public static void Start()
         {
             Console.WriteLine("**********************************************");
-            Console.WriteLine("***** Design Patterns & SOLID Principles *****");
+            Console.WriteLine("***** SOLID Principles *****");
             Console.WriteLine("**********************************************");
             Menu();
         }
@@ -16,8 +16,7 @@ namespace Patterns.Common
         {
             Console.WriteLine("Input name of following key:");
             Console.WriteLine("1. `s` or `solid` - show list of SOLID Principles");
-            Console.WriteLine("2. `p` or `patterns` - show list of Design Pattern");
-            Console.WriteLine("3. `e` or `exit` - exit from the application");
+            Console.WriteLine("2. `e` or `exit` - exit from the application");
         }
 
         public static void Error()
@@ -84,6 +83,14 @@ namespace Patterns.Common
 
         public static void Help()
         {
+            Console.WriteLine("Usage: [appname].dll [command]");
+            Console.WriteLine("\ncommand:");
+            Console.WriteLine("  -h|--help            show command line help");
+            Console.WriteLine("  -srp|--single        show implementation of Single Responsibility Principle");
+            Console.WriteLine("  -ocp|--open          show implementation of Open Closed Principle");
+            Console.WriteLine("  -lsp|--liskov        show implementation of Liskov Substitution Principle");
+            Console.WriteLine("  -isp|--interface     show implementation of Interface Segregation Principle");
+            Console.WriteLine("  -dip|--dependency    show implementation of Dependency Inversion Principle");
         }
     }
 }
