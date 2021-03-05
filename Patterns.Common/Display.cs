@@ -14,9 +14,7 @@ namespace Patterns.Common
 
         public static void Menu()
         {
-            Console.WriteLine("Input name of following key:");
-            Console.WriteLine("1. `s` or `solid` - show list of SOLID Principles");
-            Console.WriteLine("2. `e` or `exit` - exit from the application");
+            Console.WriteLine("Input any command. For a help type -h or --help");
         }
 
         public static void Error()
