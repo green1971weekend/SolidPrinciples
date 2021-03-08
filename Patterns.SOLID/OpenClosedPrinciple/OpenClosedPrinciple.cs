@@ -11,20 +11,20 @@ namespace Patterns.SOLID.OpenClosedPrinciple
     {
         public void Start()
         {
-            List<PersonModel> applicants = new List<PersonModel>()
+            // The key change is that instead of having a list of PersonModel we have a list of IApplicantModel
+            // This means that we can put any type of model in here, any type of class that implements the IApplicantModel
+            List<IApplicantModel> applicants = new List<IApplicantModel>()
             {
                 new PersonModel {FirstName = "Tim", LastName="Corey" },
-                new PersonModel {FirstName = "Sue", LastName="Storm", TypeOfEmployee = EmployeeType.Manager },
-                new PersonModel {FirstName = "Nancy", LastName="Roman", TypeOfEmployee = EmployeeType.Executive }
+                new ManagerModel {FirstName = "Sue", LastName="Storm" },
+                new ExecutiveModel {FirstName = "Nancy", LastName="Roman" }
             };
 
             List<EmployeeModel> employees  = new List<EmployeeModel>();
 
-            Accounts accountProcessor = new Accounts();
-
             foreach(var person in applicants)
             {
-                employees.Add(accountProcessor.Create(person));
+                employees.Add(person.AccountProcessor.Create(person));
             }
 
             foreach (var emp in employees)

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Patterns.SOLID.OpenClosedPrinciple
+﻿namespace Patterns.SOLID.OpenClosedPrinciple
 {
     public class EmployeeModel
     {
