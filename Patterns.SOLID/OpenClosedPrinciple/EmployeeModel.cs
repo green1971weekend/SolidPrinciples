@@ -13,5 +13,7 @@ namespace Patterns.SOLID.OpenClosedPrinciple
         public string EmailAddress { get; set; }
 
         public bool IsManager { get; set; } = false;
+
+        public bool IsExecutive { get; set; }
     }
 }

@@ -39,6 +39,13 @@ namespace ConsoleUI
                         implementation.GetSingleResponsibilityPrincipleInstance().RunAtConsole();
                     }
                     break;
+                case "-ocp":
+                case "--open":
+                    {
+                        Console.WriteLine("Open Closed Principle");
+                        implementation.GetOpenClosedPrincipleInstance().RunAtConsole();
+                    }
+                    break;
                 default:
                     {
                         Display.Error();
