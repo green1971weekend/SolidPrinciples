@@ -15,6 +15,7 @@ namespace Patterns.SOLID.OpenClosedPrinciple
             output.LastName = person.LastName;
             output.EmailAddress = $"{person.FirstName}.{person.LastName}@CEOmail.com";
 
+            output.IsManager = true;
             output.IsExecutive = true;
 
             return output;
