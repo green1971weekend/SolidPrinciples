@@ -9,10 +9,12 @@ namespace Patterns.Common
         {
             Console.ForegroundColor = ConsoleColor.Green;
             example.Start();
+
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n\n\nPress any key to continue..");
             Console.ReadKey();
             Console.Clear();
+
             Display.Menu();
         }
 

@@ -1,4 +1,5 @@
 ﻿using Patterns.Core.Interfaces;
+using Patterns.SOLID.LiskovSubstitutionPrinciple;
 using Patterns.SOLID.OpenClosedPrinciple;
 using Patterns.SOLID.SingleResponsibilityPrinciple;
 
@@ -14,6 +15,11 @@ namespace Patterns.Common
         public IExample GetOpenClosedPrincipleInstance()
         {
             return new OpenClosedPrinciple();
+        }
+
+        public IExample GetLiskovSubstitutionPrincipleInstance()
+        {
+            return new LiskovSubstitutionPrinciple();
         }
     }
 }

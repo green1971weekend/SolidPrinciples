@@ -46,6 +46,13 @@ namespace ConsoleUI
                         implementation.GetOpenClosedPrincipleInstance().RunAtConsole();
                     }
                     break;
+                case "-lsp":
+                case "--liskov":
+                    {
+                        Console.WriteLine("Liskov Substitution Principle");
+                        implementation.GetLiskovSubstitutionPrincipleInstance().RunAtConsole();
+                    }
+                    break;
                 default:
                     {
                         Display.Error();
