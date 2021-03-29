@@ -2,18 +2,16 @@
 
 namespace Patterns.SOLID.LiskovSubstitutionPrinciple
 {
-    public class CEO : Employee
+    /// <summary>
+    /// Our inherited type should be able to put in place wherever you see an employee and not break an application.
+    /// </summary>
+    public class CEO : BaseEmployee, IManager
     {
         public override void CalculatePerHourRate(int rank)
         {
             decimal baseAmount = 150M;
 
             Salary = baseAmount + rank;
-        }
-
-        public void AssignManager(Employee manager)
-        {
-
         }
 
         public void GeneratePerformanceReview()
