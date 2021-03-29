@@ -10,16 +10,16 @@ namespace Patterns.SOLID.LiskovSubstitutionPrinciple
     {
         public void Start()
         {
-            Manager accountingVP = new Manager();
+            IManager accountingVP = new Manager();
             accountingVP.FirstName = "Emma";
             accountingVP.LastName = "Stone";
             accountingVP.CalculatePerHourRate(4);
 
-            Employee emp = new Employee();
+            IManaged emp = new Employee();
             emp.FirstName = "Tim";
             emp.LastName = "Corey";
             emp.AssignManager(accountingVP);
-            emp.CalculatePerHourRate(4);
+            emp.CalculatePerHourRate(2);
 
             Console.WriteLine($"{emp.FirstName}'s salary is {emp.Salary}/hour.");
             Console.ReadLine();
