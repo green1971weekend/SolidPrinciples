@@ -53,6 +53,13 @@ namespace ConsoleUI
                         implementation.GetLiskovSubstitutionPrincipleInstance().RunAtConsole();
                     }
                     break;
+                case "-isp":
+                case "--interface":
+                    {
+                        Console.WriteLine("Liskov Substitution Principle");
+                        implementation.GetInterfaceSegregationPrincipleInstance().RunAtConsole();
+                    }
+                    break;
                 default:
                     {
                         Display.Error();

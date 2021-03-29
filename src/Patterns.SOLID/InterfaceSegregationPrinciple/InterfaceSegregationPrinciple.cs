@@ -1,4 +1,6 @@
 ﻿using Patterns.Core.Interfaces;
+using Patterns.SOLID.InterfaceSegregationPrinciple.ISPInterfaces;
+using System;
 
 namespace Patterns.SOLID.InterfaceSegregationPrinciple
 {
@@ -9,7 +11,10 @@ namespace Patterns.SOLID.InterfaceSegregationPrinciple
     {
         public void Start()
         {
-            throw new System.NotImplementedException();
+            //The reason we create such combined interface like IBorrowableDVD is to get access to all necessary properties from here.
+            IBorrowableDVD dvd = new DVD();
+
+            Console.ReadLine();
         }
     }
 }

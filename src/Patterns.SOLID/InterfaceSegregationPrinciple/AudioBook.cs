@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Patterns.SOLID.InterfaceSegregationPrinciple.ISPInterfaces;
+using System;
 
 namespace Patterns.SOLID.InterfaceSegregationPrinciple
 {
-    public class AudioBook : ILibraryItem
+    public class AudioBook : IBorrowableAudioBook
     {
         public string LibraryId { get; set; }
 
@@ -10,9 +11,7 @@ namespace Patterns.SOLID.InterfaceSegregationPrinciple
 
         public string Author { get; set; }
 
-        public int Pages { get; set; } = -1;
-
-        public int CheckOutDurationDays { get; set; }
+        public int CheckOutDurationDays { get; set; } = 14;
 
         public string Borrower { get; set; }
 

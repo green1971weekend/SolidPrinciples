@@ -1,4 +1,5 @@
 ﻿using Patterns.Core.Interfaces;
+using Patterns.SOLID.InterfaceSegregationPrinciple;
 using Patterns.SOLID.LiskovSubstitutionPrinciple;
 using Patterns.SOLID.OpenClosedPrinciple;
 using Patterns.SOLID.SingleResponsibilityPrinciple;
@@ -20,6 +21,11 @@ namespace Patterns.Common
         public IExample GetLiskovSubstitutionPrincipleInstance()
         {
             return new LiskovSubstitutionPrinciple();
+        }
+
+        public IExample GetInterfaceSegregationPrincipleInstance()
+        {
+            return new InterfaceSegregationPrinciple();
         }
     }
 }

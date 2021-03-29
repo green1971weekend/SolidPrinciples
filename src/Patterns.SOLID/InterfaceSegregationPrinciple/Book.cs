@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Patterns.SOLID.InterfaceSegregationPrinciple.ISPInterfaces;
+using System;
 
 namespace Patterns.SOLID.InterfaceSegregationPrinciple
 {
-    public class Book : ILibraryItem
+    public class Book : IBorrowableBook
     {
         public string LibraryId { get; set; }
 
