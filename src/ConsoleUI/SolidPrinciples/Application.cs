@@ -56,8 +56,15 @@ namespace ConsoleUI
                 case "-isp":
                 case "--interface":
                     {
-                        Console.WriteLine("Liskov Substitution Principle");
+                        Console.WriteLine("Interface Segregation Principle");
                         implementation.GetInterfaceSegregationPrincipleInstance().RunAtConsole();
+                    }
+                    break;
+                case "-dip":
+                case "--dependency":
+                    {
+                        Console.WriteLine("Dependency Inversion Principle");
+                        implementation.GetDependencyInversionPrincipleInstance().RunAtConsole();
                     }
                     break;
                 default:

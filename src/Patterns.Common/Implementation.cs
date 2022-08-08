@@ -1,4 +1,5 @@
 ﻿using Patterns.Core.Interfaces;
+using Patterns.SOLID.DependencyInversionPrinciple;
 using Patterns.SOLID.InterfaceSegregationPrinciple;
 using Patterns.SOLID.LiskovSubstitutionPrinciple;
 using Patterns.SOLID.OpenClosedPrinciple;
@@ -26,6 +27,11 @@ namespace Patterns.Common
         public IExample GetInterfaceSegregationPrincipleInstance()
         {
             return new InterfaceSegregationPrinciple();
+        }
+
+        public IExample GetDependencyInversionPrincipleInstance()
+        {
+            return new DependencyInversionPrinciple();
         }
     }
 }
